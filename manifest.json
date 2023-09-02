@@ -5,8 +5,7 @@
   "description": "A Chrome extension to remove X-Frame-Options headers.",
   "permissions": ["webRequest", "webRequestBlocking", "<all_urls>"],
   "background": {
-    "scripts": ["background.js"],
-    "persistent": false
+    "page": "background.html"
   },
   "content_scripts": [
     {
@@ -15,4 +14,5 @@
     }
   ]
 }
+
 
